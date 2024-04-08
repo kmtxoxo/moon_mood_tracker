@@ -1,0 +1,55 @@
+<div class="flex justify-between overflow-hidden max-h-[200px] mt-10">
+  <div class="flex flex-col justify-center items-center w-1/4">
+    <!-- canvas that renders moon image -->
+
+    <canvas
+      style="margin-left: -100%"
+      #mycanvas_yesterday
+      id="mycanvas_yesterday"
+      height="122" width="122"
+    >
+      You need a browser that supports HTML5 and JavaScript enabled to see this.
+    </canvas>
+    <p class="text-white">
+      {{ yesterday | date : "dd.MM.yy" }}
+    </p>
+    <button mat-icon-button class="mr-2">
+      <mat-icon class="text-white" fontSet="material-icons-outlined"
+        >arrow_back_ios</mat-icon
+      >
+    </button>
+  </div>
+
+  <div class="flex flex-col justify-center items-center w-1/2">
+    <!-- canvas that renders moon image -->
+    <canvas #mycanvas id="mycanvas" height="122" width="122">
+      You need a browser that supports HTML5 and JavaScript enabled to see this.
+    </canvas>
+
+    <p class="text-white">
+      {{ selectedDay | date : "dd.MM.yy" }}
+    </p>
+  </div>
+
+  <div class="flex flex-col justify-center items-center w-1/4">
+    <!-- canvas that renders moon image -->
+    <canvas
+      #mycanvas_tomorrow
+      id="mycanvas_tomorrow"
+      height="122" width="122"
+      style="margin-right: -100%"
+    >
+      You need a browser that supports HTML5 and JavaScript enabled to see this.
+    </canvas>
+
+    <p class="text-white">
+      {{ tomorrow | date : "dd.MM.yy" }}
+    </p>
+
+    <button (click)="printF()" mat-icon-button class="mr-2">
+      <mat-icon class="text-white" fontSet="material-icons-outlined"
+        >arrow_forward_ios</mat-icon
+      >
+    </button>
+  </div>
+</div>

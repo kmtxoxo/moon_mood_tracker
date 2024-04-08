@@ -1,0 +1,8 @@
+<div class="flex justify-center m-1 mt-8 max-h-[100px]">
+  <p
+    [ngClass]="{ 'text-base': (dailyPhrase?.daily?.length ?? 0) > 99 }"
+    class="text-white text-center font-['Times_New_Roman'] italic text-xl"
+  >
+    "{{ dailyPhrase?.daily }}"
+  </p>
+</div>

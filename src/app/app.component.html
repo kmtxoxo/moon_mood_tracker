@@ -1,0 +1,29 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="night-sky">
+  <!-- Stars go here -->
+  <div
+    *ngFor="let star of stars"
+    [ngClass]="{ twinkle: star.twinkle }"
+    class="star {{ star.color }}"
+    [ngStyle]="{
+      'top.px': star.positionY,
+      'left.px': star.positionX,
+      'animation-duration': star.twinkleDelay + 'ms'
+    }"
+  ></div>
+  <!-- Stars go here -->
+
+  
+
+</div>
+
+<router-outlet></router-outlet>
+<app-navbar></app-navbar>
