@@ -13,7 +13,7 @@ daily: string
   providedIn: 'root'
 })
 export class AstrologyService {
-  private rapidApiKey = 'f26ff6dfaemsh2f997798027ed79p1de5ddjsn24886fe1d09b';
+  private rapidApiKey = '';
   private rapidApiHost = 'horoscope-astrology.p.rapidapi.com';
 
   constructor(private http: HttpClient) {}
