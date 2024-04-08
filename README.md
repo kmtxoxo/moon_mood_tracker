@@ -1,5 +1,13 @@
 # MoonMoodTracker
 
+Diese Webanwendung zeigt dem Nutzer,
+- die tägliche Mondphase an
+- tägliche Astrologie Zitate aus einer Api
+- die Möglichkeit seinen Tag zu Journalen
+
+Die Webanwendung ist noch in der Entwicklung.
+![firefox_05PLl83bSw](https://github.com/kmtxoxo/moon_mood_tracker/assets/148543092/4a54e3cc-682a-499c-a2a4-02ad2eadd6a5)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
 ## Development server
